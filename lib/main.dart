@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:techno_catalog/pages/home_page.dart';
 import 'package:techno_catalog/pages/login_page.dart';
 import 'package:techno_catalog/utils/routes.dart';
+import 'package:techno_catalog/widgets/themes.dart';
 
 void main() {
   runApp( MyApp());
@@ -17,13 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Wellcome Tecnology ',
       themeMode: ThemeMode.light,
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple
-       
-      ),
+      darkTheme: MyTheme.darkTheme(context),
+      theme: MyTheme.lightTheme(context),
+    
       initialRoute: MyRoutes.homeRoute,
       routes: {
         
