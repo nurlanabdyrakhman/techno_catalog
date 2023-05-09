@@ -1,0 +1,16 @@
+
+
+{ 
+"products": [
+  {
+    "id": 1,
+    "title": "iPhone 9",
+    "desc": "An apple mobile which is nothing like apple",
+    "price": 549,
+    "color": "#33505a",
+    "image": "'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB3x4MRr71onGt8KTr6xFZyQBc4cwAz7p5ww&usqp=CAU'"
+  }
+ 
+]
+}
+
