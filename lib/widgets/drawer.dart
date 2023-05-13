@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MyDrawer extends StatelessWidget {
         color: Colors.blue,
         child: ListView(
           padding: EdgeInsets.zero,
-          children: const [
+          children:  [
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
@@ -21,11 +22,9 @@ class MyDrawer extends StatelessWidget {
                 ),
                 accountName: Text('Nurlan'),
                 accountEmail: Text('abdyraknurlan@gmail.com'),
-                currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KVxSM2ZRAgYhzNsfBDrPUdPLtHofj3gIIQ&usqp=CAU',
-                  ),
-                ),
+                currentAccountPicture: Image.network(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB3x4MRr71onGt8KTr6xFZyQBc4cwAz7p5ww&usqp=CAU',
+                width: 50,height: 50,)
               ),
             ),
             ListTile(
